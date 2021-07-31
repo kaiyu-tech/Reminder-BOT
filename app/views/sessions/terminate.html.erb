@@ -1,0 +1,20 @@
+<% provide(:title, "Connect") %>
+<div class="center jumbotron">
+  <h1>Terminate</h1>
+  <h3><%= message %></h3>
+</div>
+
+<script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+<script type="text/javascript">
+  (function() {
+    if (liff.isInClient() && '<%= type %>' == 'close') {
+      liff.closeWindow();
+    }
+  }());
+
+  document.addEventListener("DOMContentLoaded", () => {
+  });
+
+  window.onload = function() {
+  };
+</script>

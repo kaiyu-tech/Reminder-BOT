@@ -1,0 +1,320 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+event_1:
+  user: admin
+  title: '元旦'
+  description: '元旦'
+  start_date: '2022-01-01'
+  end_date: null
+  start_time: '00:00:00 +0900'
+  end_time: null
+  day_of_week: null
+  with_order: null
+  week_of_month: null
+  day_of_month: null
+  start_datetime: '2022-01-01 00:00:00 +0900'
+  end_datetime: '2022-01-01 00:00:00 +0900'
+
+event_2:
+  user: user_1
+  title: '元旦'
+  description: '元旦'
+  start_date: '2022-01-01'
+  end_date: null
+  start_time: '00:00:00 +0900'
+  end_time: null
+  day_of_week: null
+  with_order: null
+  week_of_month: null
+  day_of_month: null
+  start_datetime: '2022-01-01 00:00:00 +0900'
+  end_datetime: '2022-01-01 00:00:00 +0900'
+
+event_3:
+  user: user_1
+  title: 'ランチ'
+  description: 'ランチ'
+  start_date: null
+  end_date: null
+  start_time: '12:00:00 +0900'
+  end_time: null
+  day_of_week: null
+  with_order: null
+  week_of_month: null
+  day_of_month: null
+  start_datetime: '2021-06-16 12:00:00 +0900'
+  end_datetime: '2021-06-16 12:00:00 +0900'
+
+event_4:
+  user: user_2
+  title: '愛鳥週間'
+  description: '5月10日から5月16日'
+  start_date: '2022-05-10'
+  end_date: '2022-05-16'
+  start_time: null
+  end_time: null
+  day_of_week: null
+  with_order: null
+  week_of_month: null
+  day_of_month: null
+  start_datetime: '2022-05-10 00:00:00 +0900'
+  end_datetime: '2022-05-16 23:59:59 +0900'
+
+event_10:
+  user: user_10
+  title: 'title1-1'
+  description: 'today'
+  start_date: '2021-06-16'
+  end_date: null
+  start_time: null
+  end_time: null
+  day_of_week: null
+  with_order: null
+  week_of_month: null
+  day_of_month: null
+  start_datetime: '2021-06-16 00:00:00 +0900'
+  end_datetime: '2021-06-16 23:59:59 +0900'
+
+event_11:
+  user: user_10
+  title: 'title1-2'
+  description: 'tomorrow'
+  start_date: '2021-06-17'
+  end_date: null
+  start_time: null
+  end_time: null
+  day_of_week: null
+  with_order: null
+  week_of_month: null
+  day_of_month: null
+  start_datetime: '2021-06-17 00:00:00 +0900'
+  end_datetime: '2021-06-17 23:59:59 +0900'
+
+event_12:
+  user: user_10
+  title: 'title2'
+  description: 'next week'
+  start_date: '2021-06-23'
+  end_date: null
+  start_time: null
+  end_time: null
+  day_of_week: null
+  with_order: null
+  week_of_month: null
+  day_of_month: null
+  start_datetime: '2021-06-23 00:00:00 +0900'
+  end_datetime: '2021-06-23 23:59:59 +0900'
+
+event_13:
+  user: user_10
+  title: 'title3'
+  description: 'next month'
+  start_date: '2021-07-16'
+  end_date: null
+  start_time: null
+  end_time: null
+  day_of_week: null
+  with_order: null
+  week_of_month: null
+  day_of_month: null
+  start_datetime: '2021-07-16 00:00:00 +0900'
+  end_datetime: '2021-07-16 23:59:59 +0900'
+
+### line notify test
+
+event_20:
+  user: user_20
+  title: 'line notify test'
+  description: 'case 1'
+  start_date: '2021-05-16'
+  end_date: '2021-05-18'
+  start_time: '12:00:00'
+  end_time: null
+  day_of_week: null
+  with_order: null
+  week_of_month: null
+  day_of_month: null
+  start_datetime: '2021-05-16 12:00:00 +0900'
+  end_datetime: '2021-05-16 12:00:00 +0900'
+
+event_21:
+  user: user_20
+  title: 'line notify test'
+  description: 'case 2'
+  start_date: '2021-05-16'
+  end_date: null
+  start_time: '12:00:00'
+  end_time: null
+  day_of_week: null
+  with_order: null
+  week_of_month: null
+  day_of_month: null
+  start_datetime: '2021-05-16 12:00:00 +0900'
+  end_datetime: '2021-05-16 12:00:00 +0900'
+
+event_22:
+  user: user_20
+  title: 'line notify test'
+  description: 'case 3'
+  start_date: null
+  end_date: null
+  start_time: '12:00:00'
+  end_time: null
+  day_of_week: null
+  with_order: null
+  week_of_month: null
+  day_of_month: null
+  start_datetime: '2021-05-16 12:00:00 +0900'
+  end_datetime: '2021-05-16 12:00:00 +0900'
+
+event_23:
+  user: user_20
+  title: 'line notify test'
+  description: 'case 4'
+  start_date: null
+  end_date: null
+  start_time: '12:00:00'
+  end_time: '13:00:00'
+  day_of_week: null
+  with_order: null
+  week_of_month: null
+  day_of_month: null
+  start_datetime: '2021-05-16 12:00:00 +0900'
+  end_datetime: '2021-05-16 13:00:00 +0900'
+
+event_24:
+  user: user_20
+  title: 'line notify test'
+  description: 'case 5'
+  start_date: null
+  end_date: null
+  start_time: '12:00:00'
+  end_time: null
+  day_of_week: 0 # :sunday
+  with_order: null
+  week_of_month: null
+  day_of_month: null
+  start_datetime: '2021-05-16 12:00:00 +0900'
+  end_datetime: '2021-05-16 12:00:00 +0900'
+
+event_25:
+  user: user_20
+  title: 'line notify test'
+  description: 'case 6'
+  start_date: null
+  end_date: null
+  start_time: '12:00:00'
+  end_time: null
+  day_of_week: 0 # :sunday
+  with_order: 3
+  week_of_month: null
+  day_of_month: null
+  start_datetime: '2021-05-16 12:00:00 +0900'
+  end_datetime: '2021-05-16 12:00:00 +0900'
+
+event_26:
+  user: user_20
+  title: 'line notify test'
+  description: 'case 7'
+  start_date: null
+  end_date: null
+  start_time: '12:00:00'
+  end_time: null
+  day_of_week: 0 # :sunday
+  with_order: null
+  week_of_month: 3
+  day_of_month: null
+  start_datetime: '2021-05-16 12:00:00 +0900'
+  end_datetime: '2021-05-16 12:00:00 +0900'
+
+event_27:
+  user: user_20
+  title: 'line notify test'
+  description: 'case 8'
+  start_date: null
+  end_date: null
+  start_time: '12:00:00'
+  end_time: null
+  day_of_week: null
+  with_order: null
+  week_of_month: null
+  day_of_month: 16
+  start_datetime: '2021-05-16 12:00:00 +0900'
+  end_datetime: '2021-05-16 12:00:00 +0900'
+
+event_28:
+  user: user_20
+  title: 'line notify test'
+  description: 'case 9'
+  start_date: null
+  end_date: null
+  start_time: '12:30:00'
+  end_time: null
+  day_of_week: null
+  with_order: null
+  week_of_month: null
+  day_of_month: null
+  start_datetime: '2021-05-16 12:30:00 +0900'
+  end_datetime: '2021-05-16 12:30:00 +0900'
+
+event_29:
+  user: user_20
+  title: 'line notify test'
+  description: 'case 10'
+  start_date: null
+  end_date: null
+  start_time: '13:00:00'
+  end_time: null
+  day_of_week: null
+  with_order: null
+  week_of_month: null
+  day_of_month: null
+  start_datetime: '2021-05-16 13:00:00 +0900'
+  end_datetime: '2021-05-16 13:00:00 +0900'
+
+event_30:
+  user: user_20
+  title: 'line notify test'
+  description: 'case 11'
+  start_date: null
+  end_date: null
+  start_time: '12:00:00'
+  end_time: null
+  day_of_week: null
+  with_order: null
+  week_of_month: null
+  day_of_month: null
+  start_datetime: '2021-05-17 12:00:00 +0900'
+  end_datetime: '2021-05-17 12:00:00 +0900'
+
+event_31:
+  user: user_21
+  title: 'line notify test'
+  description: 'case 12'
+  start_date: '2021-05-16'
+  end_date: '2021-05-18'
+  start_time: '12:00:00'
+  end_time: null
+  day_of_week: null
+  with_order: null
+  week_of_month: null
+  day_of_month: null
+  start_datetime: '2021-05-16 12:00:00 +0900'
+  end_datetime: '2021-05-16 12:00:00 +0900'
+
+<% 100.upto(140) do |n| %>
+event_<%= n %>:
+  user: user_1
+  title: <%= "title #{n}" %>
+  description: <%= "description #{n}" %>
+  start_date: '2022-03-03'
+  end_date: null
+  start_time: null
+  end_time: null
+  day_of_week: null
+  with_order: null
+  week_of_month: null
+  day_of_month: null
+  start_datetime: '2022-03-03 00:00:00 +0900'
+  end_datetime: '2022-03-03 23:59:59 +0900'
+<% end %>

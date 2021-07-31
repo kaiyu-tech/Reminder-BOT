@@ -1,0 +1,13 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <nav>
+      <ul class="nav navbar-nav nav-pills">
+        <% if connected? %>
+          <li><%= controller_name == 'events' ? (link_to "Events", events_path, id: "logo") : (link_to "Events", events_path) %></li>
+          <li><%= controller_name == 'users' ? (link_to "Users", users_path, id: "logo") : (link_to "Users", users_path) %></li>
+        　<li><%= link_to "Close", destroy_sessions_path(type: :close), data: { confirm: "You sure?" } %></li>
+        <% end %>
+      </ul>
+    </nav>
+  </div>
+</header>

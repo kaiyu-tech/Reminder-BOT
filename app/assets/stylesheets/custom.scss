@@ -1,0 +1,191 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* mixins, variables, etc. */
+
+$gray-medium-light: #eaeaea;
+
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
+
+/* universal */
+
+body {
+  margin-top: 75px;
+}
+
+section {
+  overflow: auto;
+}
+
+.center {
+  margin-top: 10px;
+  text-align: center;
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1, h2, h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.pagination {
+  margin: 5px 0 10px;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.btn-primary {
+  margin: 5px 0 20px;
+}
+
+.btn-success {
+  margin: 2px 0 4px;
+}
+
+.btn-danger {
+  margin-left: 5px;
+  padding: 3px 8px;
+}
+
+.number {
+  padding: 0 5px 0 15px;
+}
+
+.unit {
+  padding: 0 15px 0 5px;
+}
+
+/* header */
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: white;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+/* footer */
+
+footer {
+  margin-top: 10px;
+  padding-top: 5px;
+  border-top: 1px solid $gray-medium-light;
+  color: $gray-light;
+  a {
+    color: $gray;
+    &:hover {
+      color: $gray-darker;
+    }
+  }
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 15px;
+    }
+  }
+}
+
+/* miscellaneous */
+
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
+}
+
+/* forms */
+
+input, textarea, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+
+input[type="date"], input[type="time"], input[type="datetime-local"] {
+  padding: 8px 0 0 8px;
+}
+
+select {
+  // outline: none;
+  border: 1px solid #bbb;
+  width: 100%;
+  padding: 7px 7px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+}
+
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
+  }
+}
+
+.checkbox {
+  margin-bottom: 10px;
+  span {
+    margin-left: 20px;
+    font-weight: normal;
+  }
+}
+
+#user_activate {
+  width: auto;
+  margin-left: 0;
+}
+
+/* events, users */
+
+.events, .users {
+  list-style: none;
+  padding: 0;
+  li {
+    padding: 10px 0;
+    border-top: 1px solid #e8e8e8;
+  }
+  .line_name, .description, .datetime, .activate, .notify_token, .expires_in, .reminded_at {
+    display: block;
+    margin: 8px 0;
+  }
+  .timestamp {
+    color: $gray-light;
+    display: block;
+  }
+}

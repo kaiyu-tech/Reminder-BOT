@@ -1,0 +1,16 @@
+<%= render 'shared/error_messages' %>
+
+<%= form_with model: @user, url: user_path, local: true, method: :patch do |f| %>
+  <%= f.label :line_name %>
+  <%= f.text_field :line_name, disabled: true, class: 'form-control' %>
+  <%= f.label :activate, class: "checkbox inline" do %>
+    <%= f.check_box :activate, disabled: not(current_user_admin?) || @user.admin? %><%= f.label :activate %>
+  <% end %>
+  <%= f.label :notify_token %>
+  <%= f.text_field :notify_token, class: 'form-control' %>
+  <%= f.label :expires_in %>
+  <%= f.datetime_field :expires_in, disabled: not(current_user_admin?) || @user.admin?, class: 'form-control' %>
+  <%= f.label :reminded_at %>
+  <%= f.datetime_field :reminded_at, disabled: true, class: 'form-control' %>
+  <%= f.submit yield(:button_text), class: "btn btn-success" %>
+<% end %>

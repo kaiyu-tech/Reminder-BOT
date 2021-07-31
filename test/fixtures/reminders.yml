@@ -1,0 +1,383 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+reminder_1_1:
+  event: event_1
+  number: 30
+  unit: 1
+  remind_at: <%= '2022-01-01 00:00:00 +0900'.in_time_zone - 30.minutes %> # $
+
+reminder_1_2:
+  event: event_1
+  number: 1
+  unit: 2
+  remind_at: <%= '2022-01-01 00:00:00 +0900'.in_time_zone - 1.hour %>
+
+reminder_1_3:
+  event: event_1
+  number: 1
+  unit: 3
+  remind_at: <%= '2022-01-01 00:00:00 +0900'.in_time_zone - 1.day %>
+
+reminder_2_1:
+  event: event_2
+  number: 30
+  unit: 1
+  remind_at: <%= '2022-01-01 00:00:00 +0900'.in_time_zone - 30.minutes %>
+
+reminder_2_2:
+  event: event_2
+  number: 1
+  unit: 2
+  remind_at: <%= '2022-01-01 00:00:00 +0900'.in_time_zone - 1.hour %>
+
+reminder_2_3:
+  event: event_2
+  number: 1
+  unit: 3
+  remind_at: <%= '2022-01-01 00:00:00 +0900'.in_time_zone - 1.day %>
+
+reminder_3_1:
+  event: event_3
+  number: 30
+  unit: 1
+  remind_at: <%= '2021-06-16 12:00:00 +0900'.in_time_zone - 30.minutes %>
+
+reminder_3_2:
+  event: event_3
+  number: 1
+  unit: 2
+  remind_at: <%= '2021-06-16 12:00:00 +0900'.in_time_zone - 1.hour %>
+
+reminder_3_3:
+  event: event_3
+  number: 1
+  unit: 3
+  remind_at: <%= '2021-06-16 12:00:00 +0900'.in_time_zone - 1.day %>
+
+reminder_4_1:
+  event: event_4
+  number: 30
+  unit: 1
+  remind_at: <%= '2022-05-10 00:00:00 +0900'.in_time_zone - 30.minutes %>
+
+reminder_4_2:
+  event: event_4
+  number: 1
+  unit: 2
+  remind_at: <%= '2022-05-10 00:00:00 +0900'.in_time_zone - 1.hour %>
+
+reminder_4_3:
+  event: event_4
+  number: 1
+  unit: 3
+  remind_at: <%= '2022-05-10 00:00:00 +0900'.in_time_zone - 1.day %>
+
+reminder_10_1:
+  event: event_10
+  number: 30
+  unit: 1
+  remind_at: <%= '2021-06-16 00:00:00 +0900'.in_time_zone - 30.minutes %>
+
+reminder_10_2:
+  event: event_10
+  number: 1
+  unit: 2
+  remind_at: <%= '2021-06-16 00:00:00 +0900'.in_time_zone - 1.hour %>
+
+reminder_10_3:
+  event: event_10
+  number: 1
+  unit: 3
+  remind_at: <%= '2021-06-16 00:00:00 +0900'.in_time_zone - 1.day %>
+
+reminder_11_1:
+  event: event_11
+  number: 30
+  unit: 1
+  remind_at: <%= '2021-06-17 00:00:00 +0900'.in_time_zone - 30.minutes %>
+
+reminder_11_2:
+  event: event_11
+  number: 1
+  unit: 2
+  remind_at: <%= '2021-06-17 00:00:00 +0900'.in_time_zone - 1.hour %>
+
+reminder_11_3:
+  event: event_11
+  number: 1
+  unit: 3
+  remind_at: <%= '2021-06-17 00:00:00 +0900'.in_time_zone - 1.day %>
+
+reminder_12_1:
+  event: event_12
+  number: 30
+  unit: 1
+  remind_at: <%= '2021-06-23 00:00:00 +0900'.in_time_zone - 30.minutes %>
+
+reminder_12_2:
+  event: event_12
+  number: 1
+  unit: 2
+  remind_at: <%= '2021-06-23 00:00:00 +0900'.in_time_zone - 1.hour %>
+
+reminder_12_3:
+  event: event_12
+  number: 1
+  unit: 3
+  remind_at: <%= '2021-06-23 00:00:00 +0900'.in_time_zone - 1.day %>
+
+reminder_13_1:
+  event: event_13
+  number: 30
+  unit: 1
+  remind_at: <%= '2021-07-16 00:00:00 +0900'.in_time_zone - 30.minutes %>
+
+reminder_13_2:
+  event: event_13
+  number: 1
+  unit: 2
+  remind_at: <%= '2021-07-16 00:00:00 +0900'.in_time_zone - 1.hour %>
+
+reminder_13_3:
+  event: event_13
+  number: 1
+  unit: 3
+  remind_at: <%= '2021-07-16 00:00:00 +0900'.in_time_zone - 1.day %>
+
+### line notify test
+
+reminder_20_1:
+  event: event_20
+  number: 30
+  unit: 1
+  remind_at: <%= '2021-05-16 12:00:00 +0900'.in_time_zone - 30.minutes %>
+
+reminder_20_2:
+  event: event_20
+  number: 1
+  unit: 2
+  remind_at: <%= '2021-05-16 12:00:00 +0900'.in_time_zone - 1.hour %>
+
+reminder_20_3:
+  event: event_20
+  number: 1
+  unit: 3
+  remind_at: <%= '2021-05-16 12:00:00 +0900'.in_time_zone - 1.day %>
+
+reminder_21_1:
+  event: event_21
+  number: 30
+  unit: 1
+  remind_at: <%= '2021-05-16 12:00:00 +0900'.in_time_zone - 30.minutes %>
+
+reminder_21_2:
+  event: event_21
+  number: 1
+  unit: 2
+  remind_at: <%= '2021-05-16 12:00:00 +0900'.in_time_zone - 1.hour %>
+
+reminder_21_3:
+  event: event_21
+  number: 1
+  unit: 3
+  remind_at: <%= '2021-05-16 12:00:00 +0900'.in_time_zone - 1.day %>
+
+reminder_22_1:
+  event: event_22
+  number: 30
+  unit: 1
+  remind_at: <%= '2021-05-16 12:00:00 +0900'.in_time_zone - 30.minutes %>
+
+reminder_22_2:
+  event: event_22
+  number: 1
+  unit: 2
+  remind_at: <%= '2021-05-16 12:00:00 +0900'.in_time_zone - 1.hour %>
+
+reminder_22_3:
+  event: event_22
+  number: 1
+  unit: 3
+  remind_at: <%= '2021-05-16 12:00:00 +0900'.in_time_zone - 1.day %>
+
+reminder_23_1:
+  event: event_23
+  number: 30
+  unit: 1
+  remind_at: <%= '2021-05-16 12:00:00 +0900'.in_time_zone - 30.minutes %>
+
+reminder_23_2:
+  event: event_23
+  number: 1
+  unit: 2
+  remind_at: <%= '2021-05-16 12:00:00 +0900'.in_time_zone - 1.hour %>
+
+reminder_23_3:
+  event: event_23
+  number: 1
+  unit: 3
+  remind_at: <%= '2021-05-16 12:00:00 +0900'.in_time_zone - 1.day %>
+
+reminder_24_1:
+  event: event_24
+  number: 30
+  unit: 1
+  remind_at: <%= '2021-05-16 12:00:00 +0900'.in_time_zone - 30.minutes %>
+
+reminder_24_2:
+  event: event_24
+  number: 1
+  unit: 2
+  remind_at: <%= '2021-05-16 12:00:00 +0900'.in_time_zone - 1.hour %>
+
+reminder_24_3:
+  event: event_24
+  number: 1
+  unit: 3
+  remind_at: <%= '2021-05-16 12:00:00 +0900'.in_time_zone - 1.day %>
+
+reminder_25_1:
+  event: event_25
+  number: 30
+  unit: 1
+  remind_at: <%= '2021-05-16 12:00:00 +0900'.in_time_zone - 30.minutes %>
+
+reminder_25_2:
+  event: event_25
+  number: 1
+  unit: 2
+  remind_at: <%= '2021-05-16 12:00:00 +0900'.in_time_zone - 1.hour %>
+
+reminder_25_3:
+  event: event_25
+  number: 1
+  unit: 3
+  remind_at: <%= '2021-05-16 12:00:00 +0900'.in_time_zone - 1.day %>
+
+reminder_26_1:
+  event: event_26
+  number: 30
+  unit: 1
+  remind_at: <%= '2021-05-16 12:00:00 +0900'.in_time_zone - 30.minutes %>
+
+reminder_26_2:
+  event: event_26
+  number: 1
+  unit: 2
+  remind_at: <%= '2021-05-16 12:00:00 +0900'.in_time_zone - 1.hour %>
+
+reminder_26_3:
+  event: event_26
+  number: 1
+  unit: 3
+  remind_at: <%= '2021-05-16 12:00:00 +0900'.in_time_zone - 1.day %>
+
+reminder_27_1:
+  event: event_27
+  number: 30
+  unit: 1
+  remind_at: <%= '2021-05-16 12:00:00 +0900'.in_time_zone - 30.minutes %>
+
+reminder_27_2:
+  event: event_27
+  number: 1
+  unit: 2
+  remind_at: <%= '2021-05-16 12:00:00 +0900'.in_time_zone - 1.hour %>
+
+reminder_27_3:
+  event: event_27
+  number: 1
+  unit: 3
+  remind_at: <%= '2021-05-16 12:00:00 +0900'.in_time_zone - 1.day %>
+
+reminder_28_1:
+  event: event_28
+  number: 30
+  unit: 1
+  remind_at: <%= '2021-05-16 12:30:00 +0900'.in_time_zone - 30.minutes %>
+
+reminder_28_2:
+  event: event_28
+  number: 1
+  unit: 2
+  remind_at: <%= '2021-05-16 12:30:00 +0900'.in_time_zone - 1.hour %>
+
+reminder_28_3:
+  event: event_28
+  number: 1
+  unit: 3
+  remind_at: <%= '2021-05-16 12:30:00 +0900'.in_time_zone - 1.day %>
+
+reminder_29_1:
+  event: event_29
+  number: 30
+  unit: 1
+  remind_at: <%= '2021-05-16 13:00:00 +0900'.in_time_zone - 30.minutes %>
+
+reminder_29_2:
+  event: event_29
+  number: 1
+  unit: 2
+  remind_at: <%= '2021-05-16 13:00:00 +0900'.in_time_zone - 1.hour %>
+
+reminder_29_3:
+  event: event_29
+  number: 1
+  unit: 3
+  remind_at: <%= '2021-05-16 13:00:00 +0900'.in_time_zone - 1.day %>
+
+reminder_30_1:
+  event: event_30
+  number: 30
+  unit: 1
+  remind_at: <%= '2021-05-17 12:00:00 +0900'.in_time_zone - 30.minutes %>
+
+reminder_30_2:
+  event: event_30
+  number: 1
+  unit: 2
+  remind_at: <%= '2021-05-17 12:00:00 +0900'.in_time_zone - 1.hour %>
+
+reminder_30_3:
+  event: event_30
+  number: 1
+  unit: 3
+  remind_at: <%= '2021-05-17 12:00:00 +0900'.in_time_zone - 1.day %>
+
+reminder_31_1:
+  event: event_31
+  number: 30
+  unit: 1
+  remind_at: <%= '2021-05-16 12:00:00 +0900'.in_time_zone - 30.minutes %>
+
+reminder_31_2:
+  event: event_31
+  number: 1
+  unit: 2
+  remind_at: <%= '2021-05-16 12:00:00 +0900'.in_time_zone - 1.hour %>
+
+reminder_20_3:
+  event: event_31
+  number: 1
+  unit: 3
+  remind_at: <%= '2021-05-16 12:00:00 +0900'.in_time_zone - 1.day %>
+
+<% 100.upto(140) do |n| %>
+reminder_<%= n %>_1:
+  event: event_<%= n %>
+  number: 30
+  unit: 1
+  remind_at: <%= '2022-01-01 22:00:00 +0900'.in_time_zone - 30.minutes %>
+
+reminder_<%= n %>_2:
+  event: event_<%= n %>
+  number: 1
+  unit: 2
+  remind_at: <%= '2022-01-01 22:00:00 +0900'.in_time_zone - 1.hour %>
+
+reminder_<%= n %>_3:
+  event: event_<%= n %>
+  number: 1
+  unit: 3
+  remind_at: <%= '2022-01-01 22:00:00 +0900'.in_time_zone - 1.day %>
+<% end %>

@@ -1,0 +1,38 @@
+<% provide(:title, "Events") %>
+<div>
+  <span class="create"><%= link_to "Create", new_event_path, class: "btn btn-primary" %></span>
+</div>
+
+<%= will_paginate %>
+
+<ul class="events">
+  <% @events.order(created_at: :desc).each do |event| %>
+    <li id="event-<%= event.id %>">
+      <span class="event"><%= link_to event.title, edit_event_path(event), class: "btn btn-success" %></span>
+      <% if show_all_events? %>
+        <span class="line_name">Owner: <%= event.user.line_name %></span>
+      <% end %>
+      <span class="description"><%= event.description %></span>
+      <span class="datetime"><%= event.datetime_to_string.gsub(/\R/, "</br>").html_safe %></span>
+      <ul class="reminders">
+        <% next_reminder = event.reminders.where('remind_at > ?', Time.zone.now).order(remind_at: :asc).first %>
+        <% event.reminders.where('number != ?', 0).order(remind_at: :asc).each do |reminder| %>
+          <li id="reminder-<%= reminder.id %>">
+            <span class="remind_at-<%= reminder.id %>"><%= reminder.remind_time.inspect %><%= next_reminder.present? && reminder.remind_time == next_reminder.remind_time ? " [Next time]" : "" %></span>
+          </li>
+        <% end %>
+      </ul>
+      <span class="timestamp">
+        Event <%= time_ago_in_words(event.start_datetime) %> <%= event.start_datetime >= Time.zone.now ? "later." : "ago." %>
+        <%= link_to "delete", event, method: :delete, data: { confirm: "You sure?" }, class: "btn btn-danger" %>
+      </span>
+    </li>
+  <% end %>
+</ul>
+
+<%= will_paginate %>
+
+<script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+<script type="text/javascript">
+  //
+</script>

@@ -1,0 +1,11 @@
+<% provide(:title, "Users") %>
+<% provide(:button_text, 'Save user') %>
+<h1 class="title">Edit user</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= link_to "Back", users_path, class: "btn btn-primary" %>
+
+    <%= render 'users/update' %>
+  </div>
+</div>

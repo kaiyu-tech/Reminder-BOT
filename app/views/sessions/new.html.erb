@@ -1,0 +1,41 @@
+<% provide(:title, "Connect") %>
+<div class="center jumbotron">
+  <h1>Reminder Bot</h1>
+  <h3><%= message %></h3>
+</div>
+
+<script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+<script type="text/javascript">
+  (function() {
+    liff.init({
+      liffId: '<%= ENV["LIFF_CHANNEL_URL"] %>'
+    }).then(() => {
+      const csrf_token = document.querySelector('meta[name="csrf-token"]').content;
+      // const access_token = liff.getAccessToken();
+      const id_token = liff.getIDToken();
+      const params = (new URL(document.location)).searchParams;
+      fetch('/sessions',
+      {
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8',
+          'X-CSRF-Token': csrf_token
+        },
+        method: 'POST',
+        // body: `access_token=${access_token}&${params}`
+        body: `id_token=${id_token}&${params}`
+      })
+      .then(res => res.json())
+      .then(data => {
+        location.replace(data.url);
+      })
+      .catch(err => alert("error: -1"));
+    })
+    .catch(err => alert("error: -2"));
+  }());
+
+  document.addEventListener("DOMContentLoaded", () => {
+  });
+
+  window.onload = function() {
+  };
+</script>

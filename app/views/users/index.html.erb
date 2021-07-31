@@ -1,0 +1,25 @@
+<% provide(:title, "Users") %>
+<%= will_paginate %>
+
+<ul class="users">
+  <% @users.order(created_at: :desc).each do |user| %>
+    <li id="user-<%= user.id %>">
+      <span class="user"><%= link_to user.line_name, edit_user_path(user), class: "btn btn-success" %></span>
+      <span class="activate">Activate: <%= user.activate? %></span>
+      <span class="notify_token">Notify token: <%= user.notify_token&.truncate(20) %></span>
+      <span class="expires_in">Expires in: <%= I18n.l(user.expires_in) if user.expires_in.present? %></span>
+      <span class="timestamp">
+        <% if user.reminded_at.present? %>
+          Reminded <%= time_ago_in_words(user.reminded_at) %> ago.
+        <% else %>
+          Never been reminded.
+        <% end %>
+        <% unless user.admin? %>
+          <%= link_to "delete", user, method: :delete, data: { confirm: "You sure?" }, class: "btn btn-danger" %>
+        <% end %>
+      </span>
+    </li>
+  <% end %>
+</ul>
+
+<%= will_paginate %>

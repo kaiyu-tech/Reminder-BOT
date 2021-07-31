@@ -1,0 +1,66 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+admin:
+  line_id_digest: <%= User.digest('line_id_admin') %>
+  line_name: "line_name_admin"
+  admin: true
+  activate: true
+  expires_in: null
+  notify_token_encrypt: null
+  reminded_at: null
+
+user_1:
+  line_id_digest: <%= User.digest('line_id_user_1') %>
+  line_name: "line_name_user_1"
+  admin: false
+  activate: true
+  expires_in: null
+  notify_token_encrypt: null
+  reminded_at: null
+
+user_2:
+  line_id_digest: <%= User.digest('line_id_user_2') %>
+  line_name: "line_name_user_2"
+  admin: false
+  activate: true
+  expires_in: null
+  notify_token_encrypt: null
+  reminded_at: null
+
+user_10:
+  line_id_digest: <%= User.digest('line_id_user_10') %>
+  line_name: "line_name_user_10"
+  admin: false
+  activate: true
+  expires_in: null
+  notify_token_encrypt: null
+  reminded_at: null
+
+user_20:
+  line_id_digest: <%= User.digest('line_id_user_20') %>
+  line_name: "line_name_user_20"
+  admin: false
+  activate: true
+  expires_in: null
+  notify_token_encrypt: <%= User.encrypt(ENV['LINE_NOTIFY_TOKEN']) %>
+  reminded_at: "2021-05-16 11:59:00"
+
+user_21:
+  line_id_digest: <%= User.digest('line_id_user_21') %>
+  line_name: "line_name_user_21"
+  admin: false
+  activate: true
+  expires_in: null
+  notify_token_encrypt: null
+  reminded_at: "2021-05-16 11:59:00"
+
+<% 100.upto(135) do |n| %>
+user_<%= n %>:
+  line_id_digest: <%= User.digest("line_id_user_#{n}") %>
+  line_name: <%= "line_name_user_#{n}" %>
+  admin: false
+  activate: false
+  expires_in: null
+  notify_token_encrypt: null
+  reminded_at: null
+<% end %>

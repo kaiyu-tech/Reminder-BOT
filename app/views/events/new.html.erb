@@ -1,0 +1,11 @@
+<% provide(:title, "Events") %>
+<% provide(:button_text, 'Create event') %>
+<h1 class="title">Create event</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= link_to "Back", events_path, class: "btn btn-primary" %>
+
+    <%= render 'create' %>
+  </div>
+</div>

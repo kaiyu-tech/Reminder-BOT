@@ -1,0 +1,11 @@
+<% provide(:title, "Events") %>
+<% provide(:button_text, 'Save changes') %>
+<h1 class="title">Edit event</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= link_to "Back", events_path, class: "btn btn-primary" %>
+
+    <%= render 'events/update' %>
+  </div>
+</div>
